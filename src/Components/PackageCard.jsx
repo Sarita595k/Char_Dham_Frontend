@@ -1,5 +1,6 @@
-import { Container } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 import styled from "styled-components"
+import { Buttons } from "./Buttons"
 
 const CardCont = styled(Container)`
 box-shadow:.1rem .1rem .4rem #a01073ff;
@@ -17,5 +18,6 @@ export const PackageCard = ({ type, price }) => {
         <CardCont>
             <Type>{type}</Type>
             <Price>{price}</Price>
+            <Buttons type={type} />
         </CardCont>)
 }

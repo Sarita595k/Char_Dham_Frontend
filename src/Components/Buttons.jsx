@@ -1,35 +1,69 @@
-// import { Button } from "react-bootstrap"
 import styled from "styled-components"
 import { FaWhatsapp, FaPhone } from "react-icons/fa";
+import { FormPopup } from "./FormPopup.jsx"
+import { useState } from "react";
 
 const Container = styled.div`
-display:flex;
-flex-direction:row;
-align-items:center;
-justify-content:space-evenly;
-padding:.6rem;
+  display:flex;
+  justify-content:space-evenly;
+  padding:.6rem;
 `
 
-const Button = styled.a`
-font-size:1.3rem;
-background-color:rgba(135, 26, 88, 1);
-color:white;
-border:none;
-padding:.8rem 1rem;
-text-decoration:none;
-transition:all .5s ease-in-out;
+const Button = styled.button`
+  font-size:1.3rem;
+  background-color:rgba(135, 26, 88, 1);
+  color:white;
+  border:none;
+  padding:.8rem 1rem;
+  cursor:pointer;
+  transition:.3s;
 
-&:hover{
-background-color:white;
-// border:.1rem solid #871a58ff;
-color:rgba(135, 26, 88, 1);
-}`
-export const Buttons = () => {
-    return (
-        <Container>
-            <Button href="https://wa.me/919582085305"><FaWhatsapp /> Whatsapp</Button>
-            <Button href="tel:+917303473668"><FaPhone /> Request Call</Button>
-            <Button>Get free Quote</Button>
-        </Container >
-    )
+  &:hover{
+    background-color:white;
+    color:rgba(135, 26, 88, 1);
+  }
+`
+
+export const Buttons = ({ type }) => {
+    const [showForm, setShowForm] = useState(false)
+
+    const phoneNumber = 918770872054
+    const whatsappMessage = `Hi, I'm interested in your ${type} Char Dham Package. Please share details.`
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`
+
+    if (type === "Economic") {
+        return (
+            <Container>
+                <a href={whatsappLink} target="_blank" rel="noreferrer">
+                    <Button><FaWhatsapp /> Whatsapp</Button>
+                </a>
+            </Container>
+        )
+    }
+
+    if (type === "Deluxe") {
+        return (
+            <>
+                <Container>
+                    <Button onClick={() => setShowForm(true)}>
+                        Request Itinerary
+                    </Button>
+                </Container>
+
+                <FormPopup show={showForm} onClose={() => setShowForm(false)} />
+            </>
+        )
+    }
+
+    if (type === "Premium") {
+        return (
+            <Container>
+                <a href="tel:+918770872054">
+                    <Button><FaPhone /> Request Call</Button>
+                </a>
+            </Container>
+        )
+    }
+
+    return null
 }

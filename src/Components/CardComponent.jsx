@@ -96,7 +96,6 @@ export const CardComponent = () => {
                                 type={pkg.type}
                                 price={pkg.price} />))}
                         </PackageContainer>
-                        <Buttons />
                     </MainContainer>
                 </Col>
             ))}

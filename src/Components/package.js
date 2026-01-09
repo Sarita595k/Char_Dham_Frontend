@@ -18,7 +18,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -29,7 +29,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -40,7 +40,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -51,7 +51,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -62,7 +62,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -73,7 +73,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -84,7 +84,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -95,7 +95,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -106,7 +106,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -117,7 +117,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -128,7 +128,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 }, {
@@ -139,7 +139,7 @@ export const details = [{
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },
-        { type: "Delux", price: "₹23,999/pp" },
+        { type: "Deluxe", price: "₹23,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
 },]

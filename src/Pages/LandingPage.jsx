@@ -5,6 +5,7 @@ import { Header } from "../Components/Header"
 import { CardComponent } from "../Components/CardComponent"
 import { Heading } from "../Components/Heading"
 import WhoweAre from "../Components/WhoweAre"
+import CharDhamAtGlance from "../Components/CharDhamAtGlance"
 
 const Div = styled.div`
 text-align:center;
@@ -18,6 +19,7 @@ export const LandingPage = () => {
             <Alert2 />
             <Header />
             <WhoweAre heading={"Who we are"} />
+            <CharDhamAtGlance subHeading={"Char Dham Yatra at a Glance"} />
             <Heading heading={"our packages"} />
             <CardComponent />
         </Div>

@@ -7,13 +7,13 @@ margin-top:3%;
 display:flex;
 flex-direction:column;
 align-items:center;
+color:#694c5c;
 `
 
 const P = styled.p`
 width:80%;
 font-family: "Poppins", sans-serif;
-font-size:1.6rem;
-color:#694c5c;`
+font-size:1.6rem;`
 
 const SubHeading = styled.h3`
 padding:3% 0 1%;

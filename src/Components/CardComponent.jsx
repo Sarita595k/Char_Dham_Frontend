@@ -8,7 +8,8 @@ const HeroContainer = styled(Row)`
 padding:1.4rem;
 `
 const MainContainer = styled(Card)`
-box-shadow:.2rem .4rem .7rem #d193b5ff;
+box-shadow:.1rem .2rem .5rem #FE4555;
+background-color:#f8f9fa;
 height:100%;
 `
 const Container = styled.div`
@@ -21,13 +22,14 @@ flex-direction:row;
 `
 const ImageWrapper = styled.div`
 width:100%;
-height:21rem;
+height:19rem;
 overflow:hidden;
 `
 const Image = styled.img`
 width:100%;
 height:100%;
 object-fit:cover;
+opacity:0.8;
 transition:all .5s ease-in-out;
 
 &:hover{
@@ -41,7 +43,7 @@ width:100%;
 const Time = styled.button`
 font-size:1.5rem;
 padding:0 6rem .9rem;
-background-image:linear-gradient(90deg,rgba(141, 33, 145, 1) 0%, rgba(135, 26, 88, 1) 100%);
+background-image:linear-gradient(90deg,#7E4555 0%, rgba(135, 26, 88, 1) 100%);
 color:white;
 border:none;
 clip-path: polygon(
@@ -97,6 +99,7 @@ export const CardComponent = () => {
                                 price={pkg.price} />))}
                         </PackageContainer>
                     </MainContainer>
+                    {/* <Buttons type={type} /> */}
                 </Col>
             ))}
 

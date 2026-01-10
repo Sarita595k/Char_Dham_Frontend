@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Buttons } from "./Buttons"
 
 const CardCont = styled(Container)`
-box-shadow:.1rem .1rem .4rem #a01073ff;
+box-shadow:.1rem .2rem .5rem #e4dadbff;
 margin-bottom:2rem;
 `
 const Type = styled.p`

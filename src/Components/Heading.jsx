@@ -4,11 +4,11 @@ const Div = styled.div`
 margin:5% auto 2%;
 `
 const H1 = styled.h1`
-font-size:3.7rem;
-font-weight:bold;
-font-family: "Protest Revolution", sans-serif;
-text-transform:uppercase;
-color:#871a58ff;
+font-size:4.4rem;
+font-family: "Lora", serif;
+font-weight:700;
+text-transform:capitalize;
+color:#44233B;
 `
 export const Heading = ({ heading }) => {
     return (

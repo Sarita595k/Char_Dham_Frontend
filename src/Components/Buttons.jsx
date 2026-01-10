@@ -11,16 +11,16 @@ const Container = styled.div`
 
 const Button = styled.button`
   font-size:1.3rem;
-  background-color:rgba(135, 26, 88, 1);
+  background-color:#7E4555;
   color:white;
   border:none;
   padding:.8rem 1rem;
   cursor:pointer;
-  transition:.3s;
+  transition:all .5s ease-in-out;
 
   &:hover{
     background-color:white;
-    color:rgba(135, 26, 88, 1);
+    color:#7E4555;
   }
 `
 

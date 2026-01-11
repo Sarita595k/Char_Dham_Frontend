@@ -13,6 +13,7 @@ font-size:1.6rem;
 `
 const Price = styled.p`
 font-size:1.3rem;`
+
 export const PackageCard = ({ type, price }) => {
     return (
         <CardCont>

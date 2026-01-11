@@ -22,7 +22,7 @@ flex-direction:row;
 `
 const ImageWrapper = styled.div`
 width:100%;
-height:19rem;
+height:25rem;
 overflow:hidden;
 `
 const Image = styled.img`
@@ -76,7 +76,7 @@ export const CardComponent = () => {
     return (
         <HeroContainer className="g-4">
             {details.map(detail => (
-                <Col xs={12} md={6} lg={4} key={detail.id}>
+                <Col xs={6} md={6} lg={4} key={detail.id}>
                     <MainContainer key={detail.id}>
                         <Container>
                             <ImageWrapper className="image">

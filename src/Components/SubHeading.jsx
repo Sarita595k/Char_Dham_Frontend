@@ -10,10 +10,10 @@ font-weight:700;
 text-transform:capitalize;
 color:#44233B;
 `
-export const SubHeading = ({ subHeading }) => {
+export const SubHeading = ({ subHeading, style }) => {
     return (
         <Div>
-            <H1>{subHeading}</H1>
+            <H1 style={style}>{subHeading}</H1>
         </Div>
     )
 }

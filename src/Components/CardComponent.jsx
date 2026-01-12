@@ -8,9 +8,11 @@ const HeroContainer = styled(Row)`
 padding:1.4rem;
 `
 const MainContainer = styled(Card)`
-box-shadow:.1rem .2rem .5rem #FE4555;
+box-shadow:.2rem .3rem 1.3rem #7E4555;
 background-color:#f8f9fa;
 height:100%;
+width:90%;
+margin:0 auto;
 `
 const Container = styled.div`
 display:flex;
@@ -22,7 +24,7 @@ flex-direction:row;
 `
 const ImageWrapper = styled.div`
 width:100%;
-height:25rem;
+height:20rem;
 overflow:hidden;
 `
 const Image = styled.img`
@@ -76,7 +78,7 @@ export const CardComponent = () => {
     return (
         <HeroContainer className="g-4">
             {details.map(detail => (
-                <Col xs={6} md={6} lg={4} key={detail.id}>
+                <Col xs={12} md={6} lg={4} key={detail.id}>
                     <MainContainer key={detail.id}>
                         <Container>
                             <ImageWrapper className="image">

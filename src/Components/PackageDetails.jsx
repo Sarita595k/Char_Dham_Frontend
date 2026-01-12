@@ -5,7 +5,7 @@ import Excluded from "./Excluded"
 
 const Container = styled.div`
 margin-top:5%;
-height:100vh;
+min-height:100%;
 width:100%;
 background-image:linear-gradient(
      #00000066
@@ -16,6 +16,7 @@ background-position:center;
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
+gap:1rem;
 justify-content:space-evenly;
 `
 const PackageDetails = () => {

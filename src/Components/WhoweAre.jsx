@@ -13,7 +13,11 @@ color:#694c5c;
 const P = styled.p`
 width:80%;
 font-family: "Poppins", sans-serif;
-font-size:1.6rem;`
+font-size:1.6rem;
+
+@media (max-width:660px){
+font-size:1.3rem;
+}`
 
 const SubHeading = styled.h3`
 padding:3% 0 1%;
@@ -21,6 +25,10 @@ padding:3% 0 1%;
 color:#FD8F8F;
 text-transform:uppercase;
 font-size:1.9rem;
+
+// @media (max-width:660px){
+// font-size:1.6rem;
+// }
 `
 const Ul = styled.ul`
 list-style-type:none;
@@ -28,6 +36,9 @@ text-align:left;
 `
 const Li = styled.li`
 font-size:1.6rem;
+@media (max-width:660px){
+font-size:1.3rem;
+}
 `
 const WhoweAre = ({ heading }) => {
     return (

@@ -41,7 +41,7 @@ const Span = styled.span`
 const Excluded = () => {
     return (
         <Div>
-            <SubHeading subHeading={"What's Included In Char Dham Yatra Packages"} style={{
+            <SubHeading subHeading={"What's not Included In Char Dham Yatra Packages"} style={{
                 color: "#FFFFFF",
                 textShadow: "0 4px 20px rgba(255,183,3,0.35)"
             }} />

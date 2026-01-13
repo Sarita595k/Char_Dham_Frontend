@@ -1,7 +1,9 @@
-import { useAccordionButton } from "react-bootstrap";
+import { useAccordionButton } from "react-bootstrap"
+
+
 const RegistrationBtn = ({ children, eventKey }) => {
     const decoratedOnClick = useAccordionButton(eventKey, () =>
-        console.log('totally custom!'),
+        onclick && onclick()
     );
 
     return (

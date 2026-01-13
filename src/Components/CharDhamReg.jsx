@@ -2,8 +2,10 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import { SubHeading } from './SubHeading'
 import RegistrationBtn from './RegistrationBtn';
+import { useState } from 'react';
 
 const CharDhamReg = () => {
+    const [open, setOpen] = useState()
     return (
         <div>
             <SubHeading subHeading={"Char Dham Yatra Registration for 2026"} />

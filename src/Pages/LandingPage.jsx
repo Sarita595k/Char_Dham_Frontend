@@ -7,6 +7,7 @@ import { Heading } from "../Components/Heading"
 import WhoweAre from "../Components/WhoweAre"
 import CharDhamAtGlance from "../Components/CharDhamAtGlance"
 import PackageDetails from "../Components/PackageDetails"
+import CharDhamReg from "../Components/CharDhamReg"
 
 const Div = styled.div`
 text-align:center;
@@ -24,6 +25,7 @@ export const LandingPage = () => {
             <Heading heading={"our packages"} />
             <CardComponent />
             <PackageDetails />
+            <CharDhamReg />
         </Div>
     )
 }

@@ -7,6 +7,10 @@ padding:2rem 0;
 margin:.9rem;
 // border:1px solid rgba(255,255,255,0.15);
 text-align:left;
+
+@media (max-width:780px){
+width:100%;
+}
 `
 
 const ListCont = styled.div`

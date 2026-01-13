@@ -7,6 +7,10 @@ padding:2rem 0;
 margin:.9rem;
 // border:1px solid rgba(255,255,255,0.15);
 text-align:left;
+
+@media (max-width:780px){
+width:100%;
+}
 `
 
 const ListCont = styled.div`
@@ -43,15 +47,16 @@ const Excluded = () => {
             }} />
             <ListCont>
                 <Ul>
-                    <Li><Span>Transportation :</Span>Private SUV, tempo traveller, or helicopter(in premium plans)</Li>
-                    <Li><Span>Accommodation :</Span> Hotels, guesthouses, or camps based on package type</Li>
-                    <Li><Span>Meals :</Span> Pure vegetarian breakfast and dinner (Jain meals on request)</Li>
-                    <Li><Span>Temple Guidance:</Span> Local guide support at key temple locations</Li>
-                    <Li><Span>Permits :</Span> Assistance with Char Dham registration and biometric process</Li>
-                    <Li><Span>Driver Charges :</Span> Toll tax, parking, fuel, and driver allowance included</Li>
-                    <Li><Span>Medical Kit :</Span> Basic first aid box for emergency needs during travel</Li>
-                    <Li><Span>VIP Darshan :</Span> Available in select deluxe or helicopter packages</Li>
-                    <Li><Span>Pony/Palki Options :</Span> Arranged for Yamunotri and Kedarnath treks if needed</Li>
+                    <Li><Span>Air/Rail Tickets :</Span> Travel to/from the starting point (Haridwar/Dehradun/Delhi)</Li>
+                    <Li><Span>Lunch & Personal Snacks :</Span> Only breakfast and dinner are usually included</Li>
+                    <Li><Span>Pony/Palki Charges :</Span> Paid separately at Yamunotri & Kedarnath if used</Li>
+                    <Li><Span>Helicopter Tickets:</Span> Not included unless clearly mentioned in the plan</Li>
+                    <Li><Span>VIP Darshan Fees :</Span> Subject to temple rules; not always guaranteed</Li>
+                    <Li><Span>Medical Expenses :</Span>  Personal medicines or hospitalization costs not covered</Li>
+                    <Li><Span>Porter Services :</Span> For carrying luggage during treks or temple visits</Li>
+                    <Li><Span>Extra Hotel Services :</Span> Room heaters, laundry, or extra meals not listed</Li>
+                    <Li><Span>Entry Fees :</Span> At sightseeing points outside of the main Char Dham circuit</Li>
+                    <Li><Span>GST/Taxes :</Span> May be extra unless specifically stated as inclusive</Li>
                 </Ul>
             </ListCont>
         </Div>

@@ -4,7 +4,7 @@ const Div = styled.div`
 margin:5% auto 2%;
 `
 const H1 = styled.h1`
-font-size:4.4rem;
+font-size:clamp(2.4rem,4vw,4.4rem);
 font-family: "Lora", serif;
 font-weight:700;
 text-transform:capitalize;

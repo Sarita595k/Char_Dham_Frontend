@@ -1,5 +1,5 @@
 import headerImg from "../assets/Char Dham Yatra Family Package (1).png"
-import { Image } from "react-bootstrap"
+// import { Image } from "react-bootstrap"
 import mobileImage from "../assets/Header/mobile1.jpg"
 import styled from "styled-components"
 

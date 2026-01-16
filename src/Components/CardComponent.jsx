@@ -3,9 +3,13 @@ import { details } from "./package"
 import styled from "styled-components"
 import { PackageCard } from "./PackageCard"
 import { Buttons } from "./Buttons"
+import { Heading } from "./Heading"
 
 const HeroContainer = styled(Row)`
 padding:1.4rem;
+@media(max-width:660px){
+display:none;
+}
 `
 const MainContainer = styled(Card)`
 box-shadow:.2rem .3rem 1.3rem #7E4555;
@@ -77,6 +81,7 @@ export const CardComponent = () => {
 
     return (
         <HeroContainer className="g-4">
+            <Heading heading={"our packages"} />
             {details.map(detail => (
                 <Col xs={12} md={6} lg={4} key={detail.id}>
                     <MainContainer key={detail.id}>

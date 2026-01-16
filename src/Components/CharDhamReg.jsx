@@ -1,7 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import { SubHeading } from './SubHeading'
-import RegistrationBtn from './RegistrationBtn';
+// import RegistrationBtn from './RegistrationBtn';
 import { useState } from 'react';
 
 const CharDhamReg = () => {
@@ -14,12 +14,12 @@ const CharDhamReg = () => {
                 <Card>
                     <Card.Header>
                         Char Dham Yatra Registration is mandatory for all pilgrims traveling to Yamunotri, Gangotri, Kedarnath, and Badrinath in 2026, whether by road, helicopter, palki, pony, or trekking route. The Government of Uttarakhand introduced compulsory registration to ensure safety, crowd management, and real-time tracking. Without valid registration, entry to temple premises and check posts is not permitted, and travelers may face delays or denial of access. <br />
-                        <RegistrationBtn
+                        <button
                             eventKey="0"
                             onClick={() => setOpen(!open)}
                         >
                             {open ? "Read less" : "Read more"}
-                        </RegistrationBtn>
+                        </button>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
                         <Card.Body>The registration is managed by the Uttarakhand Tourism Development Board (UTDB) and can be completed online or offline. Online registration is the most convenient way, allowing pilgrims to book their preferred dates in advance, upload identity details, and receive digital permits. Offline registration counters are available at major points like Haridwar, Rishikesh, Janki Chatti, Guptkashi, Phata, Sonprayag, Joshimath, Harsil, and Badrinath, but queues are long during peak season.

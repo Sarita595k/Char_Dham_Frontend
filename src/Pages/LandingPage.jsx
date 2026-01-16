@@ -22,7 +22,6 @@ export const LandingPage = () => {
             <Header />
             <WhoweAre heading={"Who we are"} />
             <CharDhamAtGlance subHeading={"Char Dham Yatra at a Glance"} />
-            <Heading heading={"our packages"} />
             <CardComponent />
             <PackageDetails />
             <CharDhamReg />

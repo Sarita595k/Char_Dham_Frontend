@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { TiTick } from "react-icons/ti";
 
 const Div = styled.div`
-margin-top:3%;
+margin-top:clamp(1%,2vw,3%);
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -11,34 +11,22 @@ color:#694c5c;
 `
 
 const P = styled.p`
-width:80%;
+max-width:80%;
 font-family: "Poppins", sans-serif;
-font-size:1.6rem;
-
-@media (max-width:660px){
-font-size:1.3rem;
-}`
+font-size:clamp(1.1rem, 2vw,1.6rem);`
 
 const SubHeading = styled.h3`
 padding:3% 0 1%;
-// background-image:url("../assets/background-color/journey.png);
 color:#FD8F8F;
 text-transform:uppercase;
-font-size:1.9rem;
-
-// @media (max-width:660px){
-// font-size:1.6rem;
-// }
+font-size:clamp(1.5rem, 1.6vw,2rem);
 `
 const Ul = styled.ul`
 list-style-type:none;
 text-align:left;
 `
 const Li = styled.li`
-font-size:1.6rem;
-@media (max-width:660px){
-font-size:1.3rem;
-}
+font-size:clamp(1.3rem,2vw,1.6rem);
 `
 const WhoweAre = ({ heading }) => {
     return (

@@ -9,10 +9,6 @@ font-family: "Lora", serif;
 font-weight:700;
 text-transform:capitalize;
 color:#44233B;
-
-@media (max-width:660px){
-font-size:3.3rem;
-}
 `
 export const Heading = ({ heading }) => {
     return (

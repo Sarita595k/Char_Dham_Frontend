@@ -8,6 +8,7 @@ import WhoweAre from "../Components/WhoweAre"
 import CharDhamAtGlance from "../Components/CharDhamAtGlance"
 import PackageDetails from "../Components/PackageDetails"
 import CharDhamReg from "../Components/CharDhamReg"
+import Faqs from "../Components/Faqs"
 
 const Div = styled.div`
 text-align:center;
@@ -25,6 +26,7 @@ export const LandingPage = () => {
             <CardComponent />
             <PackageDetails />
             <CharDhamReg />
+            <Faqs />
         </Div>
     )
 }

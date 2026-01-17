@@ -8,6 +8,7 @@ import styled from 'styled-components';
 const Para = styled.p`
 font-size:clamp(1.2rem, 1.6vw, 1.7rem);
 text-align:left;
+color:#694C5C;
 `
 const ReadBtn = styled.button`
 color:blue;

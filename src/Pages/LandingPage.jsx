@@ -9,7 +9,11 @@ import CharDhamAtGlance from "../Components/CharDhamAtGlance"
 import PackageDetails from "../Components/PackageDetails"
 import CharDhamReg from "../Components/CharDhamReg"
 import Faqs from "../Components/Faqs"
-import CardComponentCarousel from "../Components/CardComponentCarousel"
+// import CardComponentCarousel from "../Components/CardComponentCarousel"
+import CharDham from "../Components/CharDhamCarousel"
+import CharDhamCarousel from "../Components/CharDhamCarousel"
+import DoDhamCarousel from "../Components/DoDhamCarousel"
+import KedarnathCarousel from "../Components/KedarnathCarousel"
 
 const Div = styled.div`
 text-align:center;
@@ -25,9 +29,11 @@ export const LandingPage = () => {
             <WhoweAre heading={"Who we are"} />
             <CharDhamAtGlance subHeading={"Char Dham Yatra at a Glance"} />
             <CardComponent />
-            <CardComponentCarousel heading={"Char Dham yatra package"} />
-            <CardComponentCarousel heading={"do dham yatra package"} />
-            <CardComponentCarousel heading={"kedarnath yatra package"} />
+            <CharDhamCarousel />
+            <DoDhamCarousel />
+            <KedarnathCarousel />
+            {/* <CardComponentCarousel />
+            <CardComponentCarousel heading={"kedarnath yatra package"} /> */}
             <PackageDetails />
             <CharDhamReg />
             <Faqs />

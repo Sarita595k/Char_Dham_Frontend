@@ -12,6 +12,7 @@ import image11 from '../assets/PackageImage/image11.png'
 import image12 from '../assets/PackageImage/image12.jpg'
 export const details = [{
     id: 1,
+    category: "char dham",
     imageUrl: image1,
     title: "Char dham group tour",
     time: "9D/10N",
@@ -23,6 +24,7 @@ export const details = [{
     ]
 }, {
     id: 2,
+    category: "char dham",
     imageUrl: image2,
     title: "helicopter tour",
     time: "4D/5N",
@@ -34,6 +36,7 @@ export const details = [{
     ]
 }, {
     id: 3,
+    category: "char dham",
     imageUrl: image3,
     title: "Char dham yatra",
     time: "9D/8N",
@@ -45,6 +48,7 @@ export const details = [{
     ]
 }, {
     id: 4,
+    category: "char dham",
     imageUrl: image4,
     title: "Char dham yatra",
     time: "10D/9N",
@@ -56,6 +60,7 @@ export const details = [{
     ]
 }, {
     id: 5,
+    category: "char dham",
     imageUrl: image5,
     title: "Char dham group tour",
     time: "12D/11N",
@@ -67,6 +72,7 @@ export const details = [{
     ]
 }, {
     id: 6,
+    category: "do dham",
     imageUrl: image6,
     title: "do dham yatra",
     time: "7D/6N",
@@ -78,6 +84,7 @@ export const details = [{
     ]
 }, {
     id: 7,
+    category: "do dham",
     imageUrl: image7,
     title: "same day do dham",
     // time: "9D/10N",
@@ -89,6 +96,7 @@ export const details = [{
     ]
 }, {
     id: 8,
+    category: "do dham",
     imageUrl: image8,
     title: "do dham yatra",
     time: "6D/5N",
@@ -100,6 +108,7 @@ export const details = [{
     ]
 }, {
     id: 9,
+    category: "do dham",
     imageUrl: image9,
     title: "do dham yatra",
     time: "5D/4N",
@@ -111,6 +120,7 @@ export const details = [{
     ]
 }, {
     id: 10,
+    category: "kedarnath dham",
     imageUrl: image10,
     title: "kedarnath yatra",
     time: "3D/2N",
@@ -122,6 +132,7 @@ export const details = [{
     ]
 }, {
     id: 11,
+    category: "kedarnath dham",
     imageUrl: image11,
     title: "kedarnath yatra",
     time: "5D/4N",
@@ -133,6 +144,7 @@ export const details = [{
     ]
 }, {
     id: 12,
+    category: "kedarnath dham",
     imageUrl: image12,
     title: "kedarnath yatra",
     time: "5D/4N",

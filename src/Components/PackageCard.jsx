@@ -5,6 +5,10 @@ import { Buttons } from "./Buttons"
 const CardCont = styled(Container)`
 box-shadow:.1rem .2rem .5rem #e4dadbff;
 margin-bottom:2rem;
+
+ @media (max-width: 659px) {
+    box-shadow: none;
+  }
 `
 const Type = styled.p`
 font-family: "Protest Revolution", sans-serif;

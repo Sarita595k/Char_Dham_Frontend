@@ -16,16 +16,51 @@ display:none;
 }
 
 .carousel-caption{
-z-index:2;
-position:absolute;
-inset:0;
+ position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* optional, can remove if you want captions only on top/bottom */
+    pointer-events: none; /* allow clicks to go through except buttons */
+    z-index: 2;
+  }
+
+  .carousel-indicators {
+    z-index: 5; /* above overlay */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 5; /* above overlay */
+  }
+
+  .carousel-indicators button {
+    background-color: #fff; /* inactive dot */
+  }
+
+  .carousel-indicators .active {
+    background-color: #ffcc00; /* active dot */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    /* this makes the arrow white */
+  }
+    .carousel-control-prev {
+  left: -2rem; /* move left arrow outside the content */
 }
+
+.carousel-control-next {
+  right: -2rem; /* move right arrow outside the content */
+}
+
 `
 
 const ImageWrapper = styled.div`
 position:relative;
 width:100%;
-height:30rem;
+height:32rem;
 overflow:hidden;
 `
 
@@ -40,6 +75,7 @@ z-index:1;
 position:absolute;
 inset:0;
 background-color:rgba(68,35,59,0.8);
+  pointer-events: none;
 `
 const CaptionTop = styled.div`
   position: absolute;
@@ -53,7 +89,7 @@ const CaptionTop = styled.div`
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-
+  pointer-events: auto;
   z-index: 2;
 `;
 
@@ -72,7 +108,7 @@ const Time = styled.button`
   border: none;
 
   clip-path: polygon(
-    0% 0%,  
+    0% 0%,
     100% 0%,
     80% 100%,
     20% 100%
@@ -86,7 +122,7 @@ font-size:2rem;
 text-transform:capitalize;
 `
 const H3 = styled.h3`
-margin-top:2rem;
+margin-bottom:1.2rem;
 font-size:1.5rem;
 color:rgb(206, 179, 199);
 text-transform:capitalize;
@@ -94,18 +130,19 @@ text-transform:capitalize;
 
 const CaptionBottom = styled.div`
   position: absolute;
-  bottom: 0rem;
+  bottom: 1rem;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   pointer-events: auto;
 `;
 
 const BtnContainer = styled.div`
 color:rgb(245, 238, 243);
 border:none;
+pointer-events: auto;
 `
 const StyledPackageCard = styled(PackageCard)`
   border: 1px solid rgba(255,255,255,0.6);
@@ -118,7 +155,11 @@ const CardComponentCarousel = ({ title, slides }) => {
     return (
         <Div>
             <Heading heading={title} />
-            < CarouselIs data-bs-theme="dark" controls={false} indicators={false}>
+            < CarouselIs data-bs-theme="dark"
+                controls={true}
+                indicators={true}
+                interval={2000} // optional autoplay
+                pause="hover">
                 {slides.map((item, index) => (
                     <Carousel.Item key={index}>
                         <ImageWrapper>

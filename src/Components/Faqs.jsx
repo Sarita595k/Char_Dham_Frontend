@@ -10,7 +10,7 @@ const AccordionContainer = styled(Accordion)`
 }
  && .accordion-item{
  background-color:transparent;
-
+padding:clamp(1rem,2vw, 1.3rem);
  }
 && .accordion-button,
 && .accordion-button:not(.collapsed),
@@ -40,6 +40,7 @@ const Faqs = () => {
                         The Char Dham Yatra tour is a spiritual journey to four sacred Hindu temples in Uttarakhand—Yamunotri, Gangotri, Kedarnath, and Badrinath. Thousands of devotees visit every year to seek blessings and peace. The journey covers long mountain routes, scenic locations, river valleys, and spiritual experiences.
                     </Accordion.Body>
                 </Accordion.Item>
+
                 {/* question 2 */}
                 <Accordion.Item eventKey="1">
                     <Accordion.Header> How many days does it take to complete Char Dham Yatra by road?</Accordion.Header>

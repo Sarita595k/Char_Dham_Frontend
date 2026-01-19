@@ -87,7 +87,7 @@ export const details = [{
     category: "do dham",
     imageUrl: image7,
     title: "same day do dham",
-    // time: "9D/10N",
+    time: "1D/1N",
     included: ["🍛meals", "🚗sightseeing"],
     packages: [
         { type: "Economic", price: "₹18999/pp" },

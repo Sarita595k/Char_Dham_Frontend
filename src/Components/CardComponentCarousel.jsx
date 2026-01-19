@@ -9,7 +9,7 @@ const Div = styled.div`
 // border:1px solid black;
 `
 const CarouselIs = styled(Carousel)`
-margin:3rem;
+margin:clamp(1.3rem,1.6vw,2.8rem);
 
 @media(min-width:660px){
 display:none;
@@ -79,7 +79,7 @@ background-color:rgba(68,35,59,0.8);
 `
 const CaptionTop = styled.div`
   position: absolute;
-  top: 1.3rem;
+  top:clamp(1.3rem,1.6vw,1.6rem);
   left: 0;
   right: 0;
 
@@ -97,7 +97,7 @@ const Time = styled.button`
   position: absolute;
   top: -1.2rem;
 
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem,1.6vw,1.6rem);
   padding: 0 6rem .9rem;
   background-image: linear-gradient(
     90deg,
@@ -118,12 +118,12 @@ const Time = styled.button`
 const H1 = styled.h1`
 margin-top:2rem;
 color:white;
-font-size:2rem;
+font-size:clamp(1.8rem, 1.6vw,2rem);
 text-transform:capitalize;
 `
 const H3 = styled.h3`
 margin-bottom:1.2rem;
-font-size:1.5rem;
+font-size:(1.5rem,1.6rem,1.6rem);
 color:rgb(206, 179, 199);
 text-transform:capitalize;
 `
@@ -152,43 +152,43 @@ const StyledPackageCard = styled(PackageCard)`
 
 
 const CardComponentCarousel = ({ title, slides }) => {
-    return (
-        <Div>
-            <Heading heading={title} />
-            < CarouselIs data-bs-theme="dark"
-                controls={true}
-                indicators={true}
-                interval={2000} // optional autoplay
-                pause="hover">
-                {slides.map((item, index) => (
-                    <Carousel.Item key={index}>
-                        <ImageWrapper>
-                            <CarouselImage
-                                className="d-block w-100"
-                                src={item.imageUrl}
-                                alt={item.title}
-                            />
-                            <Overlay />
-                        </ImageWrapper>
-                        <Carousel.Caption>
-                            <CaptionTop>
-                                <Time>{item.time}</Time>
-                                <H1>{item.title}</H1>
-                                <H3>{item.included}</H3>
-                            </CaptionTop>
-                            <CaptionBottom>
-                                {item.packages.map((pkg, index) => (
-                                    <BtnContainer>
-                                        <StyledPackageCard key={index} type={pkg.type} price={pkg.price} />
-                                    </BtnContainer>
-                                ))}
-                            </CaptionBottom>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+  return (
+    <Div>
+      <Heading heading={title} />
+      < CarouselIs data-bs-theme="dark"
+        controls={true}
+        indicators={true}
+        interval={2000} // optional autoplay
+        pause="hover">
+        {slides.map((item, index) => (
+          <Carousel.Item key={index}>
+            <ImageWrapper>
+              <CarouselImage
+                className="d-block w-100"
+                src={item.imageUrl}
+                alt={item.title}
+              />
+              <Overlay />
+            </ImageWrapper>
+            <Carousel.Caption>
+              <CaptionTop>
+                <Time>{item.time}</Time>
+                <H1>{item.title}</H1>
+                <H3>{item.included}</H3>
+              </CaptionTop>
+              <CaptionBottom>
+                {item.packages.map((pkg, index) => (
+                  <BtnContainer>
+                    <StyledPackageCard key={index} type={pkg.type} price={pkg.price} />
+                  </BtnContainer>
                 ))}
-            </CarouselIs>
-        </Div>
-    );
+              </CaptionBottom>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </CarouselIs>
+    </Div>
+  );
 }
 
 export default CardComponentCarousel;

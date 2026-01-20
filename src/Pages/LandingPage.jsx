@@ -14,6 +14,7 @@ import CharDham from "../Components/CharDhamCarousel"
 import CharDhamCarousel from "../Components/CharDhamCarousel"
 import DoDhamCarousel from "../Components/DoDhamCarousel"
 import KedarnathCarousel from "../Components/KedarnathCarousel"
+import Footer from "../Components/Footer"
 
 const Div = styled.div`
 text-align:center;
@@ -37,6 +38,7 @@ export const LandingPage = () => {
             <PackageDetails />
             <CharDhamReg />
             <Faqs />
+            <Footer />
         </Div>
     )
 }

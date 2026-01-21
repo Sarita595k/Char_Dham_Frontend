@@ -11,9 +11,9 @@ const Div = styled.div`
 const CarouselIs = styled(Carousel)`
 margin:clamp(1.3rem,1.6vw,2.8rem);
 
-@media(min-width:660px){
-display:none;
-}
+// @media(min-width:660px){
+// display:none;
+// }
 
 .carousel-caption{
  position: absolute;
@@ -178,7 +178,7 @@ const CardComponentCarousel = ({ title, slides }) => {
               </CaptionTop>
               <CaptionBottom>
                 {item.packages.map((pkg, index) => (
-                  <BtnContainer>
+                  <BtnContainer key={index}>
                     <StyledPackageCard key={index} type={pkg.type} price={pkg.price} />
                   </BtnContainer>
                 ))}

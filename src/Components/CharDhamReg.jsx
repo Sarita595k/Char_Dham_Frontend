@@ -5,7 +5,7 @@ import { SubHeading } from './SubHeading'
 import { useState } from 'react';
 import styled from 'styled-components';
 
-const Para = styled.p`
+const Para = styled.div`
 font-size:clamp(1.2rem, 1.6vw, 1.7rem);
 text-align:left;
 color:#694C5C;
@@ -35,7 +35,6 @@ const CharDhamReg = () => {
                             check posts is not permitted, and travelers may face
                             delays or denial of access.
                             <ReadBtn
-                                eventKey="0"
                                 onClick={() => setOpen(!open)}
                             >
                                 {open ? "Read less" : "Read more"}

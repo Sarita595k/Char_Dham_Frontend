@@ -39,8 +39,8 @@ right:3rem;
 `
 
 const LogoImage = styled.img`
-height:10rem;
-width:10rem;
+height:clamp(10rem, 45vw, 13rem);
+width:clamp(10rem, 45vw, 13rem);
 `
 
 const ModalBody = styled(Modal.Body)`
@@ -48,11 +48,17 @@ padding:1rem;
 `
 
 const FormWrapper = styled.form`
-input{
-font-size:clamp(1.2rem, 1.6vw, 2rem);
+ input[type="text"],
+  input[type="tel"],
+  input[type="email"]{
+font-size:clamp(1.2rem, 1.6vw, 1.7rem);
 padding:clamp(.7rem,1.6vw,1.6rem);
 margin-top:clamp(1rem,1.6vw,2rem);
 }
+ .form-control {
+    border-radius: 0.6rem;
+    border: 1px solid #7E4555;
+  }
 `
 
 const CloseBtn = styled(Button)`
@@ -123,7 +129,7 @@ Preferred Month: ${formData.email}
             </Modal.Header>
 
             <ModalBody>
-                <FormWrapper>
+                <FormWrapper autoComplete='off'>
                     <input type='text' className="form-control mb-2" name="userName" value={formData.userName} placeholder="Your Name" onChange={handleChange} required />
                     <input type='tel' className="form-control mb-2" name="phoneNumber" value={formData.phoneNumber} pattern="[6-9]{1}[0-9]{9}" maxLength="10" placeholder="Phone Number" onChange={handleChange} required />
                     <input type='email' className="form-control mb-2" name="email" value={formData.email} placeholder="Your Email" onChange={handleChange} required />

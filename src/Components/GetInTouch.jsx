@@ -7,6 +7,11 @@ padding-left:clamp(5%,2vw,7%);
 // border:1px solid black;
 text-align:left;
 margin-top:clamp(-5%,2vw, -10%);
+margin-bottom:2rem;
+
+@media(min-width:660px){
+margin:5%;
+}
 `
 const Heading = styled.h1`
 font-size:clamp(1.7rem,1.6vw, 2rem);

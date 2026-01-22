@@ -6,7 +6,7 @@ import logo from "../assets/Logo/YugenIndiaLogo.png"
 const Div = styled.div`
 margin-top:clamp(3rem, 2vw, 5rem);
 width:100%;
-min-height:100vh;
+max-height:50vh;
 background-image:  linear-gradient(
       rgba(68, 35, 59, 0.8),   /* overlay color */
       rgba(68, 35, 59, 0.5)
@@ -19,6 +19,11 @@ flex-direction:column;
 align-items:left;
 justify-contents:space-evenly;
 
+@media(min-width:660px){
+// top:10rem;
+flex-direction:row;
+justify-content:space-between;
+}
 `
 
 const Image = styled.img`

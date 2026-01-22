@@ -16,6 +16,7 @@ import DoDhamCarousel from "../Components/DoDhamCarousel"
 import KedarnathCarousel from "../Components/KedarnathCarousel"
 import Footer from "../Components/Footer"
 import AllDhamCollection from "../Components/AllDhamCollection"
+import AllRightsReserved from "../Components/AllRightsReserved"
 
 const Div = styled.div`
 text-align:center;
@@ -31,16 +32,12 @@ export const LandingPage = () => {
             <WhoweAre heading={"Who we are"} />
             <CharDhamAtGlance subHeading={"Char Dham Yatra at a Glance"} />
             <CardComponent />
-            {/* <CharDhamCarousel />
-            <DoDhamCarousel />
-            <KedarnathCarousel /> */}
             <AllDhamCollection />
-            {/* <CardComponentCarousel />
-            <CardComponentCarousel heading={"kedarnath yatra package"} /> */}
             <PackageDetails />
             <CharDhamReg />
             <Faqs />
             <Footer />
+            <AllRightsReserved />
         </Div>
     )
 }

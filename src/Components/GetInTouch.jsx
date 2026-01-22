@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Div = styled.div`
 padding-left:clamp(5%,2vw,7%);
-border:1px solid black;
+// border:1px solid black;
 text-align:left;
 margin-top:clamp(-5%,2vw, -10%);
 `

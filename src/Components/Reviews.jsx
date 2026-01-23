@@ -6,12 +6,18 @@ import { Heading } from './Heading'
 const Div = styled.div`
 // display:flex;
 // flex-direction:column;
+background-color:transaprent;
 `
+const CarouselContainer = styled(Carousel)`
+// background-color:transparent;
+`
+
+
 const Reviews = () => {
     return (
         <Div>
             <Heading heading={"Testimonials"} />
-            <Carousel>
+            <CarouselContainer>
                 <Carousel.Item>
                     <Card>
                         <Card.Img variant="top" src="holder.js/100px180" />
@@ -51,7 +57,7 @@ const Reviews = () => {
                         </Card.Body>
                     </Card>
                 </Carousel.Item>
-            </Carousel>
+            </CarouselContainer>
         </Div>
     )
 }

@@ -17,6 +17,7 @@ import KedarnathCarousel from "../Components/KedarnathCarousel"
 import Footer from "../Components/Footer"
 import AllDhamCollection from "../Components/AllDhamCollection"
 import AllRightsReserved from "../Components/AllRightsReserved"
+import Reviews from "../Components/Reviews"
 
 const Div = styled.div`
 text-align:center;
@@ -36,6 +37,7 @@ export const LandingPage = () => {
             <PackageDetails />
             <CharDhamReg />
             <Faqs />
+            <Reviews />
             <Footer />
             <AllRightsReserved />
         </Div>

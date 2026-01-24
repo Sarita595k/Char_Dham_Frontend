@@ -1,3 +1,73 @@
 export const Reviews = [{
-
+    id: 1,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 2,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 3,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 4,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 5,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 6,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 7,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 8,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 9,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 10,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 11,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
+}, {
+    id: 12,
+    imageUrl: "",
+    name: "",
+    ratings: "",
+    description: ""
 }]

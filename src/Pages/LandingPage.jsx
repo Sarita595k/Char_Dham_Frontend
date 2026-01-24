@@ -10,14 +10,12 @@ import PackageDetails from "../Components/PackageDetails"
 import CharDhamReg from "../Components/CharDhamReg"
 import Faqs from "../Components/Faqs"
 // import CardComponentCarousel from "../Components/CardComponentCarousel"
-import CharDham from "../Components/CharDhamCarousel"
-import CharDhamCarousel from "../Components/CharDhamCarousel"
-import DoDhamCarousel from "../Components/DoDhamCarousel"
-import KedarnathCarousel from "../Components/KedarnathCarousel"
 import Footer from "../Components/Footer"
 import AllDhamCollection from "../Components/AllDhamCollection"
 import AllRightsReserved from "../Components/AllRightsReserved"
 import Reviews from "../Components/Reviews"
+import { FormPopup } from "../Components/FormPopup"
+import FormForDetails from "../Components/FormForDetails"
 
 const Div = styled.div`
 text-align:center;
@@ -31,6 +29,8 @@ export const LandingPage = () => {
             <Alert2 />
             <Header />
             <WhoweAre heading={"Who we are"} />
+            <FormForDetails />
+            {/* <FormPopup show={showForm} onClose={() => setShowForm(true)} /> */}
             <CharDhamAtGlance subHeading={"Char Dham Yatra at a Glance"} />
             <CardComponent />
             <AllDhamCollection />

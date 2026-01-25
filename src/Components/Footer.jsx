@@ -40,6 +40,7 @@ const Footer = () => {
         <Div>
             <Image src={logo}></Image>
             <GetInTouch />
+
         </Div>
     )
 }

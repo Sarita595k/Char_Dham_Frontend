@@ -55,19 +55,28 @@ const FormForDetails = () => {
         });
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        setFormData({
+            userName: "",
+            email: "",
+            phoneNumber: "",
+            placesToVisit: "",
+            numberOfAdults: "",
+            numberOfChildren: ""
+        })
     };
     return (
         <Div>
             <SubHeading subHeading={"fill out the form for any enquiry and get best travel deals! "} style={{ color: "white", padding: "2rem 2rem 0rem" }} />
-            <FormWrapper autoComplete='off'>
+            <FormWrapper autoComplete='off' onSubmit={handleSubmit}>
                 <input type='text' className="form-control mb-2" name="userName" value={formData.userName} placeholder="Your Name" onChange={handleChange} required />
                 <input type='email' className="form-control mb-2" name="email" value={formData.email} placeholder="Your Email" onChange={handleChange} required />
-                <input type="text" className="form-control mb-2" name="placesToVisit" id="placesToVisit" placeholder='Place to visit/Query' required />
+                <input type="text" className="form-control mb-2" name="placesToVisit" value={formData.placesToVisit} placeholder='Place to visit/Query' required />
                 <input type='tel' className="form-control mb-2" name="phoneNumber" value={formData.phoneNumber} pattern="[6-9]{1}[0-9]{9}" maxLength="10" placeholder="Phone Number" onChange={handleChange} required />
-                <input type="number" className="form-control mb-2" name="numberOfAdults" id="numberOfAdults" placeholder='number of adults' required />
-                <input type="number" className="form-control mb-2" name="NumberOfChildren" id="numberOfChildren" placeholder='number of children' required />
-                <Button type='submit'>Submit</Button>
+                <input type="number" className="form-control mb-2" name="numberOfAdults" value={formData.numberOfAdults} placeholder='number of adults' required />
+                <input type="number" className="form-control mb-2" name="NumberOfChildren" value={formData.numberOfChildren} placeholder='number of children' required />
+                <Button>Submit</Button>
             </FormWrapper>
         </Div>
     );

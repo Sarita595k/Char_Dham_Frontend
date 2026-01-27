@@ -39,7 +39,7 @@ background-color:#dbce13;
 `
 const FormForDetails = () => {
     const [formData, setFormData] = useState({
-        userName: "",
+        username: "",
         email: "",
         phoneNumber: "",
         placesToVisit: "",
@@ -55,27 +55,46 @@ const FormForDetails = () => {
         });
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
-        setFormData({
-            userName: "",
-            email: "",
-            phoneNumber: "",
-            placesToVisit: "",
-            numberOfAdults: "",
-            numberOfChildren: ""
-        })
+        try {
+            const response = await fetch("http://localhost:3000/api/user/data", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData)
+            })
+            const result = await response.json()
+            if (response.ok) {
+                alert("data submitted successfully!")
+                setFormData({
+                    userName: "",
+                    email: "",
+                    phoneNumber: "",
+                    placesToVisit: "",
+                    numberOfAdults: "",
+                    numberOfChildren: ""
+                })
+            } else {
+                alert("Error" + result.error)
+            }
+        } catch (err) {
+            console.log("error", err)
+            alert("Could not connect to the server")
+        }
+
     };
     return (
         <Div>
             <SubHeading subHeading={"fill out the form for any enquiry and get best travel deals! "} style={{ color: "white", padding: "2rem 2rem 0rem" }} />
             <FormWrapper autoComplete='off' onSubmit={handleSubmit}>
-                <input type='text' className="form-control mb-2" name="userName" value={formData.userName} placeholder="Your Name" onChange={handleChange} required />
+                <input type='text' className="form-control mb-2" name="username" value={formData.username} placeholder="Your Name" onChange={handleChange} required />
                 <input type='email' className="form-control mb-2" name="email" value={formData.email} placeholder="Your Email" onChange={handleChange} required />
-                <input type="text" className="form-control mb-2" name="placesToVisit" value={formData.placesToVisit} placeholder='Place to visit/Query' required />
+                <input type="text" className="form-control mb-2" name="placesToVisit" value={formData.placesToVisit} placeholder='Place to visit/Query' required onChange={handleChange} />
                 <input type='tel' className="form-control mb-2" name="phoneNumber" value={formData.phoneNumber} pattern="[6-9]{1}[0-9]{9}" maxLength="10" placeholder="Phone Number" onChange={handleChange} required />
-                <input type="number" className="form-control mb-2" name="numberOfAdults" value={formData.numberOfAdults} placeholder='number of adults' required />
-                <input type="number" className="form-control mb-2" name="NumberOfChildren" value={formData.numberOfChildren} placeholder='number of children' required />
+                <input type="number" className="form-control mb-2" name="numberOfAdults" value={formData.numberOfAdults} placeholder='number of adults' required onChange={handleChange} />
+                <input type="number" className="form-control mb-2" name="numberOfChildren" value={formData.numberOfChildren} placeholder='number of children' required onChange={handleChange} />
                 <Button>Submit</Button>
             </FormWrapper>
         </Div>

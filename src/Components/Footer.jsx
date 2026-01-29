@@ -2,6 +2,7 @@ import styled from "styled-components"
 import bgImage2 from "../assets/Background-color/bg1.png"
 import { GetInTouch } from "./GetInTouch"
 import logo from "../assets/Logo/YugenIndiaLogo.png"
+import { Link } from "react-router-dom"
 
 const Div = styled.div`
 margin-top:clamp(3rem, 2vw, 5rem);
@@ -40,6 +41,9 @@ const Footer = () => {
         <Div>
             <Image src={logo}></Image>
             <GetInTouch />
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/refund">Refund Policy</Link>
+            <Link to="/terms">Terms and Conditions</Link>
         </Div>
     )
 }

@@ -11,7 +11,6 @@ import TermsCondition from "./Pages/TermsCondition"
 const App = () => {
   return (
     <>
-
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/privacy' element={<PrivacyPolicy />} />

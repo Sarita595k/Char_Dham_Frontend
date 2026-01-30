@@ -18,8 +18,9 @@ background-size:cover;
 background-position:center;
 display:flex;
 flex-direction:column;
-align-items:left;
-justify-contents:space-evenly;
+align-items:flex-start;
+justify-content:space-evenly;
+
 
 @media(min-width:660px){
 // top:10rem;
@@ -36,8 +37,16 @@ margin-top:clamp(-4rem,2vw,-8rem);
 height:clamp(13rem,35vw,30rem);
 width:clamp(13rem,35vw,30rem);
 `
+// const LinksWrapper = styled.div`
+// display:flex;
+// flex-direction:column;
+// align-items:flex-start;
+// width:100%;
+// `
 const LinkIs = styled(Link)`
-margin-left:clamp(5%,1.6vw,7%);2
+margin-left:clamp(10%, 1.6vw, 6%);
+display:block
+width:100%;
 text-align:left;
 color:white;
 text-decoration:none;
@@ -50,9 +59,11 @@ const Footer = () => {
         <Div>
             <Image src={logo}></Image>
             <GetInTouch />
+            {/* <LinksWrapper> */}
             <LinkIs to="/privacy">Privacy Policy</LinkIs>
             <LinkIs to="/refund">Refund Policy</LinkIs>
             <LinkIs to="/terms">Terms and Conditions</LinkIs>
+            {/* </LinksWrapper> */}
         </Div>
     )
 }

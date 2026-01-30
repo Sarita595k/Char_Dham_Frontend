@@ -37,7 +37,7 @@ height:clamp(13rem,35vw,30rem);
 width:clamp(13rem,35vw,30rem);
 `
 const LinkIs = styled(Link)`
-margin-left:clamp(5%,1.6vw,7%);
+margin-left:clamp(5%,1.6vw,7%);2
 text-align:left;
 color:white;
 text-decoration:none;

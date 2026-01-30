@@ -33,6 +33,7 @@ const CardWrapper = styled.div`
 const CharDhamAtGlance = ({ subHeading }) => {
   return (
     <div>
+      {/* subHeading called here  */}
       <SubHeading subHeading={subHeading}></SubHeading>
       <ContainerIs>
         <TourCard title={"Starts from"} text={"Haridwar, Rishikesh, Dehradun, Delhi"} />

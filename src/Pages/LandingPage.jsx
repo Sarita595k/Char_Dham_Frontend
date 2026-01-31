@@ -16,6 +16,7 @@ import AllRightsReserved from "../Components/AllRightsReserved"
 import Reviews from "../Components/Reviews"
 import { FormPopup } from "../Components/FormPopup"
 import FormForDetails from "../Components/FormForDetails"
+import CustomizeReg from "../Components/CustomizeReg"
 
 const Div = styled.div`
 text-align:center;
@@ -38,6 +39,7 @@ export const LandingPage = () => {
             <CharDhamReg />
             <Faqs />
             <Reviews />
+            <CustomizeReg />
             <Footer />
             <AllRightsReserved />
         </Div>

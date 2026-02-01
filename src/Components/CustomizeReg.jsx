@@ -8,6 +8,7 @@ const CustomizeReg = () => {
     })
     return (
         <div>
+            {/* subheading called  */}
             <SubHeading subHeading="customize your holiday package with our travel experts" />
             <form>
                 <input type="text" name="name" value={details.name} placeholder='Enter your name' />

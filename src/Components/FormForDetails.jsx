@@ -40,9 +40,16 @@ padding:clamp(.7rem,1.6vw,1.8rem);
 border:none;
 font-size:clamp(1.4rem,1.6vw,1.9rem);
 border-radius:.9rem;
-color:#7E4555;
+color:#4A2C2A;
 font-weight:600;
-background-color:#dbce13;
+background-color:#A3A333;
+
+transition:all .5s ease-in-out; 
+
+&:hover{
+background-color:#4A2C2A;
+color:#ffffff;
+}
 `
 
 const FormForDetails = () => {

@@ -17,6 +17,7 @@ export const Header = () => {
     return (
         <HeaderWrapper>
             <picture>
+                {/* header image  */}
                 <source srcSet={mobileImage} media="(max-width:660px)" alt="header image" style={{ objectFit: "cover" }} />
                 <img src={headerImg} alt="header image" />
             </picture>

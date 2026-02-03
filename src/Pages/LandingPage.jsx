@@ -17,6 +17,7 @@ import Reviews from "../Components/Reviews"
 import { FormPopup } from "../Components/FormPopup"
 import FormForDetails from "../Components/FormForDetails"
 import CustomizeReg from "../Components/CustomizeReg"
+import WhatsTrending from "../Components/WhatsTrending"
 
 const Div = styled.div`
 text-align:center;
@@ -30,6 +31,7 @@ export const LandingPage = () => {
             <Alert2 />
             <Header />
             <WhoweAre heading={"Who we are"} />
+            <WhatsTrending />
             <FormForDetails />
             {/* <FormPopup show={showForm} onClose={() => setShowForm(true)} /> */}
             <CharDhamAtGlance subHeading={"Char Dham Yatra at a Glance"} />

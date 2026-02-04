@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import PrivacyPolicy from "./Pages/PrivacyPolicy"
 import RefundPolicy from "./Pages/RefundPolicy"
 import TermsCondition from "./Pages/TermsCondition"
+import WhatsTrendingPage from './Components/WhatsTrendingPage';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/privacy' element={<PrivacyPolicy />} />
         <Route path='/refund' element={<RefundPolicy />} />
         <Route path='/terms' element={<TermsCondition />} />
+        <Route path='/trending' element={<WhatsTrendingPage />} />
       </Routes>
     </>
   )

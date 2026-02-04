@@ -2,7 +2,7 @@ import React from 'react'
 import { Heading } from './Heading'
 import { SubHeading } from './SubHeading'
 import styled from 'styled-components'
-
+import Faqs from "./Faqs"
 const MainContainer = styled.div`
 max-width:clamp(100vw,45vw, 90vw);
 margin-left:clamp(2rem,1.6vw,3rem);
@@ -36,10 +36,10 @@ const Li = styled.li`
 font-size:clamp(1.3rem,2vw,1.6rem);
 `
 const WhatsTrendingPage = () => {
-    return (
+    return (<>
         <MainContainer>
             <Heading heading={`Char Dham Yatra Itinerary – 9 Nights 10 Days (Trusted Pilgrimage Package)`} />
-            <P>Plan your sacred <b> Char Dham Yatra</b> with a well-paced, safety-first itinerary covering <b>Yamunotri Temple, Gangotri Temple, Kedarnath Temple, and Badrinath Temple.</b> <br /><br />
+            <br /><P>Plan your sacred <b> Char Dham Yatra</b> with a well-paced, safety-first itinerary covering <b>Yamunotri Temple, Gangotri Temple, Kedarnath Temple, and Badrinath Temple.</b> <br /><br />
                 This 9 Nights / 10 Days Char Dham Yatra itinerary is designed for <b>comfortable travel, proper acclimatisation, and smooth darshan</b>, making it ideal for families, senior citizens, and first-time pilgrims.</P>
             <SubHeading subHeading="Overview of Char Dham Yatra Package" />
             <P>The Char Dham Yatra is one of the most sacred Hindu pilgrimages in India, undertaken through the Himalayan regions of Uttarakhand. Our itinerary follows the <b>traditional route sequence</b> and avoids rushed travel or unsafe same-day long drives.</P>
@@ -186,9 +186,10 @@ const WhatsTrendingPage = () => {
 
             </P>
             <hr />
-
             {/* <SubHeading subHeading="Overview of Char Dham Yatra Package" /> */}
         </MainContainer >
+        <Faqs />
+    </>
     )
 }
 

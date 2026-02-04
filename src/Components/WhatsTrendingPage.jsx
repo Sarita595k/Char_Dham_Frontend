@@ -110,25 +110,80 @@ const WhatsTrendingPage = () => {
 
             </P>
             <hr />
+
             {/* day 5 */}
-
-
-
-
-
-
-
-
             <Title> Day 05: Uttarkashi – Guptkashi</Title>
             <P>After breakfast, drive to Guptkashi (approx. 230 km).
                 <br />
-                En-route view the Mandakini River at Tilwara.
+                En-route view the Mandakini River at Tilwara. <br /><br />
                 <b>On arrival:</b>
                 <ul>
                     <li>  Hotel check-in</li>
                     <li>Visit Ardh Narishwar Temple</li>
                 </ul>
                 Overnight stay at Guptkashi.
+            </P>
+            <hr />
+
+            {/* day 6 */}
+            <Title>  Day 06: Guptkashi – Kedarnath</Title>
+            <P>Early morning drive to Sonprayag, then take a government jeep to Gaurikund.
+                <br />From Gaurikund, begin the trek to Kedarnath (approx. 17 km one way).
+                <br /><br />
+                <b>  Travel options:</b>
+                <ul>
+                    <li>  Trekking</li>
+                    <li>Pony / Doli</li>
+                    <li> Helicopter (from Phata / Sirsi / Guptkashi helipad)</li>
+                </ul>
+                After darshan and pooja, <b> overnight stay at Kedarnath Ji.</b>
+            </P>
+            <hr />
+
+            {/* day 7 */}
+            <Title> Day 07: Kedarnath – Guptkashi</Title>
+            <P>Early morning darshan (optional). <br />
+                Trek down to Gaurikund and return to Guptkashi via Sonprayag.
+                <br /> Hotel check-in on arrival.
+                <br />Overnight stay at Guptkashi.
+            </P>
+            <hr />
+
+            {/* day 8 */}
+            <Title> Day 08: Guptkashi – Pipalkoti</Title>
+            <P>After breakfast, drive to Pipalkoti.<br />
+                En-route witness famous Prayag (river confluences) of Uttarakhand.
+                <br /> Evening free for rest and acclimatization.
+                <br />Overnight stay at Pipalkoti.
+            </P>
+            <hr />
+
+            {/* day 9*/}
+            <Title>  Day 09: Pipalkoti – Badrinath – Pipalkoti</Title>
+            <P>After breakfast, drive to Badrinath (approx. 80 km).
+                <br /><br />
+                <b>   At Badrinath:</b>
+                <ul>
+                    <li>Holy bath at Tapt Kund</li>
+                    <li>Darshan of Badrivishal</li>
+                    <li>  Visit Brahma Kapal (ancestral rituals)</li>
+                </ul>
+
+                <b> Optional sightseeing (time permitting):</b>
+                <ul>
+                    <li>   Mana Village</li>
+                    <li>Vyas Gufa</li>
+                    <li>  Saraswati River origin</li>
+                </ul>
+                Return to Pipalkoti. Overnight stay at Pipalkoti.
+            </P>
+            <hr />
+            {/* day 10 */}
+            <Title>Day 10: Pipalkoti – Haridwar / Dehradun</Title>
+            <P>After breakfast, drive to Pipalkoti.<br />
+                After breakfast, drive back to Haridwar or Dehradun.
+                <br />Drop off at the railway station/airport for onward journey.
+
             </P>
             <hr />
 

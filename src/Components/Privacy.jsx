@@ -3,7 +3,7 @@ import { SubHeading } from "./SubHeading"
 import styled from "styled-components"
 
 const MainContainer = styled.div`
-width:clamp(100vw,45vw, 90vw);
+max-width:clamp(100vw,45vw, 90vw);
 margin-left:clamp(2rem,1.6vw,3rem);
 `
 

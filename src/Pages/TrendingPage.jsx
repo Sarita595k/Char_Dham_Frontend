@@ -7,6 +7,7 @@ import Book from '../Components/Book'
 import styled from 'styled-components'
 import HealthAndSafety from './HealthAndSafety'
 
+// to manage the container 
 const Div = styled.div`
 margin:2%;
 `

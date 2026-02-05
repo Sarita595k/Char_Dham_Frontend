@@ -57,7 +57,7 @@ text-transform:capitalize;
 const Footer = () => {
     return (
         <Div>
-            <Image src={logo}></Image>
+            <Link to="/"><Image src={logo}></Image></Link>
             <GetInTouch />
             {/* <LinksWrapper> */}
             <LinkIs to="/privacy">Privacy Policy</LinkIs>

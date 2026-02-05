@@ -1,11 +1,10 @@
-import React from 'react'
 import { Heading } from './Heading'
 import { SubHeading } from './SubHeading'
 import styled from 'styled-components'
-import Faqs from "./Faqs"
+
 const MainContainer = styled.div`
 max-width:clamp(100vw,45vw, 90vw);
-margin-left:clamp(2rem,1.6vw,3rem);
+// margin-left:clamp(2rem,1.6vw,3rem);
 `
 const HeadTitle = styled.h2`
 padding-top:clamp(1.3rem,1.6vw,2.3rem);
@@ -22,7 +21,7 @@ font-size:clamp(1.3rem,1.6vw,1.9rem);
 color:#4A2C2A;`
 
 const P = styled.p`
-max-width:90%;
+max-width:100%;
 font-family: "Poppins", sans-serif;
 font-size:clamp(1.1rem, 2vw,1.6rem);
 color:#7E4555`
@@ -35,9 +34,10 @@ text-align:left;
 const Li = styled.li`
 font-size:clamp(1.3rem,2vw,1.6rem);
 `
-const WhatsTrendingPage = () => {
-    return (<>
+const Itinerary = () => {
+    return (
         <MainContainer>
+
             <Heading heading={`Char Dham Yatra Itinerary – 9 Nights 10 Days (Trusted Pilgrimage Package)`} />
             <br /><P>Plan your sacred <b> Char Dham Yatra</b> with a well-paced, safety-first itinerary covering <b>Yamunotri Temple, Gangotri Temple, Kedarnath Temple, and Badrinath Temple.</b> <br /><br />
                 This 9 Nights / 10 Days Char Dham Yatra itinerary is designed for <b>comfortable travel, proper acclimatisation, and smooth darshan</b>, making it ideal for families, senior citizens, and first-time pilgrims.</P>
@@ -188,9 +188,7 @@ const WhatsTrendingPage = () => {
             <hr />
             {/* <SubHeading subHeading="Overview of Char Dham Yatra Package" /> */}
         </MainContainer >
-        <Faqs />
-    </>
     )
 }
 
-export default WhatsTrendingPage
+export default Itinerary

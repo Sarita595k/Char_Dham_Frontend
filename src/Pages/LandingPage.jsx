@@ -27,9 +27,9 @@ overflow-x:hidden;
 export const LandingPage = () => {
     return (
         <Div>
-            <Alert1 />
+            {/* <Alert1 />
             <Alert2 />
-            <Header />
+            <Header /> */}
             <WhoweAre heading={"Who we are"} />
             <WhatsTrending />
             <FormForDetails />
@@ -42,8 +42,8 @@ export const LandingPage = () => {
             <Faqs />
             <Reviews />
             <CustomizeReg />
-            <Footer />
-            <AllRightsReserved />
+            {/* <Footer />
+            <AllRightsReserved /> */}
         </Div>
     )
 }

@@ -1,6 +1,8 @@
 import styles from 'styled-components'
 
 const Div = styles.div`
+text-align:center;
+overflow-x:hidden;
 background-color:#FDF5E6;
 padding:1rem`
 

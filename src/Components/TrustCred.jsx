@@ -8,7 +8,7 @@ font-size:clamp(1.3rem, 2vw,1.6rem);
 color:#7E4555;
 font-weight:500;`
 
-const P = styled.p`
+const P = styled.div`
 max-width:100%;
 font-family: "Poppins", sans-serif;
 font-size:clamp(1.2rem, 2vw,1.6rem);

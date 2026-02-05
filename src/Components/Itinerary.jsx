@@ -20,7 +20,7 @@ font-family: "Poppins", sans-serif;
 font-size:clamp(1.3rem,1.6vw,1.9rem);
 color:#4A2C2A;`
 
-const P = styled.p`
+const P = styled.div`
 max-width:100%;
 font-family: "Poppins", sans-serif;
 font-size:clamp(1.1rem, 2vw,1.6rem);

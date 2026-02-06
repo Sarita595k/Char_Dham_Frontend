@@ -7,6 +7,7 @@ import Book from '../Components/Book'
 import styled from 'styled-components'
 import HealthAndSafety from './HealthAndSafety'
 import Itinerary from '../Components/Itinerary'
+import HealthTips from '../Components/HealthTips'
 
 // to manage the container 
 const Div = styled.div`
@@ -20,6 +21,7 @@ const TrendingPage = () => {
             <TrustCred />
             <HealthAndSafety />
             <Book />
+            <HealthTips />
             <Faqs />
         </Div>
     )

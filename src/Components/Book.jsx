@@ -29,7 +29,8 @@ const Book = () => {
             <SubHeading subHeading={"Book Char Dham Yatra"} />
             <SubTitle> 🙏 Ready to Begin Your Char Dham Yatra? </SubTitle>
             <P> Speak with a real Char Dham travel expert and get:</P>
-            <Ul>Personalized itinerary guidance
+            <Ul>
+                <Li>Personalized itinerary guidance</Li>
                 <Li> Cost breakup</Li>
                 <Li>Best travel dates based on your profile</Li>
             </Ul>

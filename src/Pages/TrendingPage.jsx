@@ -9,6 +9,7 @@ import HealthAndSafety from './HealthAndSafety'
 import Itinerary from '../Components/Itinerary'
 import HealthTips from '../Components/HealthTips'
 import ImportantNotes from '../Components/ImportantNotes'
+import OnlyBg from '../Components/OnlyBg'
 
 // to manage the container 
 const Div = styled.div`
@@ -18,6 +19,7 @@ const TrendingPage = () => {
     return (
         <Div>
             <Itinerary />
+            {/* <OnlyBg /> */}
             <Reasons />
             <TrustCred />
             <HealthAndSafety />

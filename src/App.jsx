@@ -14,6 +14,7 @@ import { Alert2 } from './Components/Alert2';
 import Footer from './Components/Footer';
 import AllRightsReserved from './Components/AllRightsReserved';
 import ScrollToTop from './Components/ScrollToTop';
+import Counter from './Components/Counter';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='/trending' element={<TrendingPage />} />
       </Routes>
       <Footer />
+      {/* <Counter /> */}
       <AllRightsReserved />
     </>
   )

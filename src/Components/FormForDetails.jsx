@@ -61,7 +61,7 @@ const FormForDetails = () => {
         numberOfAdults: "",
         numberOfChildren: ""
     })
-    const [errorMessage, setErrorMessage] = useState("")
+    const [errorMessage, getErrorMessage] = useState("")
     const [showSuccess, setShowSuccess] = useState(false)
 
     const handleChange = (event) => {
@@ -80,7 +80,7 @@ const FormForDetails = () => {
     }, [showSuccess]);
     const handleSubmit = async (event) => {
         event.preventDefault()
-        setErrorMessage("")
+        getErrorMessage("")
         try {
             const response = await fetch("http://localhost:3000/api/user/data", {
                 method: "POST",
@@ -105,10 +105,10 @@ const FormForDetails = () => {
                     numberOfChildren: ""
                 })
             } else {
-                setErrorMessage(result.error)
+                getErrorMessage(result.error)
             }
         } catch (err) {
-            setErrorMessage("Connection failed.Please try again later.")
+            getErrorMessage("Connection failed.Please try again later.")
         }
 
     };

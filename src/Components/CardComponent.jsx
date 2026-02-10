@@ -44,7 +44,7 @@ transform:scale(1.1);
 `
 
 const TextWrapper = styled.div`
-width:80%;
+width:100%;
 `
 const Time = styled.button`
 font-size:1.5rem;

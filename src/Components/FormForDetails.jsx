@@ -82,7 +82,7 @@ const FormForDetails = () => {
         event.preventDefault()
         setErrorMessage("")
         try {
-            const response = await fetch("http://localhost:3000/api/user/data", {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/data`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

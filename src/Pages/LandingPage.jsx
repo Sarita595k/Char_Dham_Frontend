@@ -13,11 +13,11 @@ import Faqs from "../Components/Faqs"
 import Footer from "../Components/Footer"
 import AllDhamCollection from "../Components/AllDhamCollection"
 import AllRightsReserved from "../Components/AllRightsReserved"
-import Reviews from "../Components/Reviews"
 import { FormPopup } from "../Components/FormPopup"
 import FormForDetails from "../Components/FormForDetails"
 import CustomizeReg from "../Components/CustomizeReg"
 import WhatsTrending from "../Components/WhatsTrending"
+import ReviewsComp from "../Components/Reviews"
 
 const Div = styled.div`
 text-align:center;
@@ -40,7 +40,7 @@ export const LandingPage = () => {
             <PackageDetails />
             <CharDhamReg />
             <Faqs />
-            <Reviews />
+            <ReviewsComp />
             <CustomizeReg />
             {/* <Footer />
             <AllRightsReserved /> */}

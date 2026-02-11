@@ -116,6 +116,7 @@ const Time = styled.button`
 `;
 
 const H1 = styled.h1`
+width:75%;
 margin-top:2rem;
 color:white;
 font-size:clamp(1.8rem, 1.6vw,2rem);

@@ -32,8 +32,12 @@ const WhoweAre = ({ heading }) => {
     return (
         <Div>
             <Heading heading={heading} />
-            <P>Yugen India Travel is a growing, ePperience-driven travel organization dedicated to spiritual and pilgrimage tourism in India.
-                Though we are a 2-year-old organization, our foundation is built on over 10 years of hands-on experience in the tour and travel industry.</P>
+            <P>
+          Yugen India Travel is a growing, experience-driven travel organisation
+          dedicated to spiritual and pilgrimage tourism across India.
+          While we are a young company, our founder built this on over
+          10 years of hands-on expertise in designing and managing meaningful journeys.
+        </P>
             <SubHeading>Our journey so far</SubHeading>
             <Ul>
                 <Li><TiTick style={{ color: "#FD8F8F" }} />Successfully served 400+ devotees till date</Li>

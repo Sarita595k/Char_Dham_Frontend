@@ -126,7 +126,7 @@ export const details = [{
     id: 10,
     category: "kedarnath dham",
     imageUrl: image10,
-    title: "Kedarnath Yatra From Haridwar",
+    title: "Kedarnath Yatra From Haridwar / Dehradun",
     time: "3N/4D",
     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
     packages: [
@@ -134,19 +134,21 @@ export const details = [{
         { type: "Deluxe", price: "₹14,999/pp" },
         { type: "Premium", price: "Price on request" }
     ]
-}, {
-    id: 11,
-    category: "kedarnath dham",
-    imageUrl: image11,
-    title: "Kedarnath Yatra From Dehradun",
-    time: "3N/4D",
-    included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
-    packages: [
-        { type: "Economic", price: "₹9,999/pp" },
-        { type: "Deluxe", price: "₹14,999/pp" },
-        { type: "Premium", price: "Price on request" }
-    ]
-}, {
+},
+// {
+//     id: 11,
+//     category: "kedarnath dham",
+//     imageUrl: image11,
+//     title: "Kedarnath Yatra From Dehradun",
+//     time: "3N/4D",
+//     included: ["🍛meals", "🚗sightseeing", "🏨hotel"],
+//     packages: [
+//         { type: "Economic", price: "₹9,999/pp" },
+//         { type: "Deluxe", price: "₹14,999/pp" },
+//         { type: "Premium", price: "Price on request" }
+//     ]
+// }, 
+{
     id: 12,
     category: "kedarnath dham",
     imageUrl: image12,

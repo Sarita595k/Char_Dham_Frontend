@@ -30,7 +30,7 @@ export const LandingPage = () => {
             {/* <Alert1 />
             <Alert2 />
             <Header /> */}
-            <WhoweAre heading={"Who we are"} />
+
             <WhatsTrending />
             <FormForDetails />
             {/* <FormPopup show={showForm} onClose={() => setShowForm(true)} /> */}
@@ -40,6 +40,7 @@ export const LandingPage = () => {
             <PackageDetails />
             <CharDhamReg />
             <Faqs />
+            <WhoweAre heading={"Who we are"} />
             <ReviewsComp />
             <CustomizeReg />
             {/* <Footer />

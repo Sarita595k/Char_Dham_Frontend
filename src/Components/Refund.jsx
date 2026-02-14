@@ -1,3 +1,4 @@
+import Contact from "./Contact"
 import { Heading } from "./Heading"
 import { SubHeading } from "./SubHeading"
 import styled from "styled-components"
@@ -101,10 +102,7 @@ const Refund = () => {
                     effective upon posting.</P>
 
                 <SubHeading subHeading="Contact Information" />
-                <Title>Yugen India Travel</Title>
-                <P> Location: Bhopal, Madhya Pradesh, India</P>
-                <P> Email: [your email]</P>
-                <P>Phone: [your phone]</P>
+                <Contact />
             </Div></MainContainer>
     )
 }

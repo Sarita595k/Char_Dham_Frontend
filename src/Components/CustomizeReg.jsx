@@ -3,19 +3,23 @@ import { SubHeading } from "./SubHeading"
 import styled from 'styled-components'
 
 const Div = styled.div`
-width:100%;
 display:flex;
+align-items:center;
+justify-content:center;
 `
 
 const FormWrapper = styled.form`
+width:70%;
 padding:clamp(1.2rem,2vw,4rem);
-
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
  input[type="text"],
   input[type="tel"],
-  input[type="email"],
-  input[type="number"]{
+  input[type="email"]{
 font-size:clamp(1rem, 1.6vw, 1.7rem);
-padding:clamp(.7rem,1.6vw,1.6rem);
+padding:clamp(.7rem,.6vw,.6rem);
 // margin-top:clamp(1rem,1.6vw,2rem);
 border:.1rem solid black;
 }
@@ -30,12 +34,12 @@ border:.1rem solid black;
 `
 
 const Button = styled.button`
-width:20%;
+width:50%;
 margin-top:clamp(2rem,1.6vw,2.5rem);
 padding:clamp(.7rem,1.6vw,1.8rem);
 border:none;
 font-size:clamp(1.2rem,1.6vw,1.9rem);
-// border-radius:.9rem;
+border-radius:.9rem;
 color:#4A2C2A;
 font-weight:500;
 background-color:#A3A333;
@@ -107,29 +111,6 @@ const CustomizeReg = () => {
         }
 
     };
-    const [details, setDetails] = useState({
-        name: "",
-        email: "",
-        mobileNumber: ""
-    })
-
-    // const handleChange = (event) => {
-    //     const { name, value } = event.target
-    //     setDetails((prev) => ({
-    //         ...prev,
-    //         [name]: value
-    //     }))
-    //     console.log(details.name, details.email, details.mobileNumber)
-    // }
-    // const handleSubmit = (event) => {
-    //     event.preventDefault()
-    //     setDetails({
-    //         name: "",
-    //         email: "",
-    //         mobileNumber: ""
-    //     })
-
-    // }
     return (
         <>
             {/* subheading called  */}
@@ -137,10 +118,9 @@ const CustomizeReg = () => {
             <Div>
                 <FormWrapper autoComplete='off' onSubmit={handleSubmit}>
                     {errorMessage && <h4 style={{ color: '#ff4d4d' }}>{errorMessage}</h4>}
-                    {showSuccess && <h4 style={{ color: '#2ecc71' }}>Form submitted successfully!</h4>}
+                    {showSuccess && <h4 style={{ color: '#2ecc71' }}>Form submitted successfully! Soon our experts will contact you.</h4>}
                     <input type='text' className="form-control mb-2" name="username" value={formData.username} placeholder="Your Name" onChange={handleChange} required />
                     <input type='email' className="form-control mb-2" name="email" value={formData.email} placeholder="Your Email" onChange={handleChange} required />
-                    <input type="text" className="form-control mb-2" name="placesToVisit" value={formData.placesToVisit} placeholder='city' required onChange={handleChange} />
                     <input type='tel' className="form-control mb-2" name="phoneNumber" value={formData.phoneNumber} pattern="[6-9]{1}[0-9]{9}" maxLength="10" placeholder="Phone Number" onChange={handleChange} required />
                     <Button>Submit</Button>
                 </FormWrapper>

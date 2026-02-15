@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
 import { SubHeading } from './SubHeading';
 import { useEffect } from 'react';
@@ -43,16 +44,24 @@ border-radius:.9rem;
 color:#4A2C2A;
 font-weight:600;
 background-color:#A3A333;
-
 transition:all .5s ease-in-out; 
 
 &:hover{
 background-color:#4A2C2A;
 color:#ffffff;
 }
-`
+
+&:disabled {
+background-color: #ccc;
+cursor: not-allowed;
+color: #666;
+}
+`;
+
 
 const FormForDetails = () => {
+    const navigate = useNavigate();
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [formData, setFormData] = useState({
         username: "",
         email: "",
@@ -62,7 +71,6 @@ const FormForDetails = () => {
         numberOfChildren: ""
     })
     const [errorMessage, getErrorMessage] = useState("")
-    const [showSuccess, setShowSuccess] = useState(false)
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -71,16 +79,11 @@ const FormForDetails = () => {
             [name]: value
         });
     }
-
-    useEffect(() => {
-        if (showSuccess) {
-            const timer = setTimeout(() => setShowSuccess(false), 5000);
-            return () => clearTimeout(timer);
-        }
-    }, [showSuccess]);
     const handleSubmit = async (event) => {
-        event.preventDefault()
-        getErrorMessage("")
+        event.preventDefault();
+        getErrorMessage("");
+        setIsSubmitting(true);   // Start loading
+
         try {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/data`, {
                 method: "POST",
@@ -92,10 +95,11 @@ const FormForDetails = () => {
                     numberOfAdults: Number(formData.numberOfAdults),
                     numberOfChildren: Number(formData.numberOfChildren)
                 })
-            })
-            const result = await response.json()
+            });
+
+            const result = await response.json();
+
             if (response.ok) {
-                setShowSuccess(true)
                 setFormData({
                     username: "",
                     email: "",
@@ -103,28 +107,35 @@ const FormForDetails = () => {
                     placesToVisit: "",
                     numberOfAdults: "",
                     numberOfChildren: ""
-                })
+                });
+
+                navigate("/char-dham/thankyou");
             } else {
-                getErrorMessage(result.error)
+                getErrorMessage(result.error);
             }
         } catch (err) {
-            getErrorMessage("Connection failed.Please try again later.")
+            getErrorMessage("Connection failed. Please try again later.");
+        } finally {
+            setIsSubmitting(false);   // Stop loading
         }
-
     };
+
     return (
         <Div>
             <SubHeading subHeading={"fill out the form for any enquiry and get best travel deals! "} style={{ color: "white", padding: "2rem 2rem 0rem" }} />
             <FormWrapper autoComplete='off' onSubmit={handleSubmit}>
                 {errorMessage && <h4 style={{ color: '#ff4d4d' }}>{errorMessage}</h4>}
-                {showSuccess && <h4 style={{ color: '#2ecc71' }}>Form submitted successfully!</h4>}
+                {/* {showSuccess && <h4 style={{ color: '#2ecc71' }}>Form submitted successfully!</h4>} */}
                 <input type='text' className="form-control mb-2" name="username" value={formData.username} placeholder="Your Name" onChange={handleChange} required />
                 <input type='email' className="form-control mb-2" name="email" value={formData.email} placeholder="Your Email" onChange={handleChange} required />
                 <input type="text" className="form-control mb-2" name="placesToVisit" value={formData.placesToVisit} placeholder='city' required onChange={handleChange} />
                 <input type='tel' className="form-control mb-2" name="phoneNumber" value={formData.phoneNumber} pattern="[6-9]{1}[0-9]{9}" maxLength="10" placeholder="Phone Number" onChange={handleChange} required />
                 <input type="number" className="form-control mb-2" name="numberOfAdults" value={formData.numberOfAdults} placeholder='number of adults' required onChange={handleChange} />
                 <input type="number" className="form-control mb-2" name="numberOfChildren" value={formData.numberOfChildren} placeholder='number of children' required onChange={handleChange} />
-                <Button>Submit</Button>
+                <Button disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Submit"}
+                </Button>
+
             </FormWrapper>
         </Div>
     );

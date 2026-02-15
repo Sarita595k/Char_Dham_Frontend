@@ -15,6 +15,7 @@ import Footer from './Components/Footer';
 import AllRightsReserved from './Components/AllRightsReserved';
 import ScrollToTop from './Components/ScrollToTop';
 import Counter from './Components/Counter';
+import ThankYou from './Components/ThankYou';
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/refund' element={<RefundPolicy />} />
         <Route path='/terms' element={<TermsCondition />} />
         <Route path='/trending' element={<TrendingPage />} />
+        <Route path="/thankYou" element={<ThankYou />} />
       </Routes>
       <Footer />
       {/* <Counter /> */}

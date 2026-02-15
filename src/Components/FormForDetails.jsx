@@ -109,7 +109,7 @@ const FormForDetails = () => {
                     numberOfChildren: ""
                 });
 
-                navigate("/char-dham/thankyou");
+                navigate("/thankyou");
             } else {
                 getErrorMessage(result.error);
             }

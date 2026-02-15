@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { useNavigate } from "react-router-dom"
 import { SubHeading } from "./SubHeading"
 import styled from 'styled-components'
 
@@ -51,14 +52,13 @@ color:#ffffff;
 }
 `
 const CustomizeReg = () => {
+    const navigate = useNavigate();
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const [formData, setFormData] = useState({
         username: "",
         email: "",
         phoneNumber: "",
-        placesToVisit: "",
-        numberOfAdults: "",
-        numberOfChildren: ""
     })
     const [errorMessage, getErrorMessage] = useState("")
     const [showSuccess, setShowSuccess] = useState(false)
@@ -71,17 +71,13 @@ const CustomizeReg = () => {
         });
     }
 
-    useEffect(() => {
-        if (showSuccess) {
-            const timer = setTimeout(() => setShowSuccess(false), 5000);
-            return () => clearTimeout(timer);
-        }
-    }, [showSuccess]);
     const handleSubmit = async (event) => {
-        event.preventDefault()
-        getErrorMessage("")
+        event.preventDefault();
+        getErrorMessage("");
+        setIsSubmitting(true);  // start loading
+
         try {
-            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/data`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/customizeData`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -91,26 +87,29 @@ const CustomizeReg = () => {
                     numberOfAdults: Number(formData.numberOfAdults),
                     numberOfChildren: Number(formData.numberOfChildren)
                 })
-            })
-            const result = await response.json()
+            });
+
+            const result = await response.json();
+
             if (response.ok) {
-                setShowSuccess(true)
                 setFormData({
                     username: "",
                     email: "",
                     phoneNumber: "",
-                    placesToVisit: "",
-                    numberOfAdults: "",
-                    numberOfChildren: ""
-                })
-            } else {
-                getErrorMessage(result.error)
-            }
-        } catch (err) {
-            getErrorMessage("Connection failed.Please try again later.")
-        }
+                });
 
+                navigate("/thankYou"); // ✅ redirect
+            } else {
+                getErrorMessage(result.error);
+            }
+
+        } catch (err) {
+            getErrorMessage("Connection failed. Please try again later.");
+        } finally {
+            setIsSubmitting(false); // stop loading
+        }
     };
+
     return (
         <>
             {/* subheading called  */}
@@ -122,7 +121,10 @@ const CustomizeReg = () => {
                     <input type='text' className="form-control mb-2" name="username" value={formData.username} placeholder="Your Name" onChange={handleChange} required />
                     <input type='email' className="form-control mb-2" name="email" value={formData.email} placeholder="Your Email" onChange={handleChange} required />
                     <input type='tel' className="form-control mb-2" name="phoneNumber" value={formData.phoneNumber} pattern="[6-9]{1}[0-9]{9}" maxLength="10" placeholder="Phone Number" onChange={handleChange} required />
-                    <Button>Submit</Button>
+                    <Button type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? "Submitting..." : "Submit"}
+                    </Button>
+
                 </FormWrapper>
             </Div>
         </>

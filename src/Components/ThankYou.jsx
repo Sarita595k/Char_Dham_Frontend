@@ -1,5 +1,5 @@
-import Heading from './Heading'
-import SubHeading from "./SubHeading"
+import { Heading } from './Heading'
+import { SubHeading } from "./SubHeading"
 const ThankYou = () => {
     return (
         <div>

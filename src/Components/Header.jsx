@@ -11,6 +11,15 @@ const HeaderWrapper = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 660px) {
+    height: auto;
+
+    img {
+      height: auto;
+      object-fit: contain;
+    }
+  }
 `;
 
 const Header = () => {

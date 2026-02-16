@@ -1,5 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import { Suspense, lazy } from "react";
+import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
+
 
 const LandingPage = lazy(() => import("./Pages/LandingPage"));
 const PrivacyPolicy = lazy(() => import("./Pages/PrivacyPolicy"));

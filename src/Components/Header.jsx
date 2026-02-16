@@ -12,8 +12,7 @@ const HeaderWrapper = styled.div`
     object-fit: cover;
   }
 `;
-
-export const Header = () => {
+const Header = () => {
     return (
         <HeaderWrapper>
             <picture>
@@ -25,3 +24,4 @@ export const Header = () => {
     )
 }
 
+export default Header

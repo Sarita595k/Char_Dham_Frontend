@@ -12,7 +12,7 @@ color:#4A2C2A;
 `
 const Span = styles.span`
 color:#CC3366`
-export const Alert1 = () => {
+const Alert1 = () => {
     return (
         <Div>
             <H1>Char Dham Temples are closed for winter
@@ -23,3 +23,4 @@ export const Alert1 = () => {
         </Div>
     )
 }
+export default Alert1

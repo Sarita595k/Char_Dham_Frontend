@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { Alert1 } from "../Components/Alert1"
-import { Alert2 } from "../Components/Alert2"
-import { Header } from "../Components/Header"
+import Alert1 from "../Components/Alert1"
+import Alert2 from "../Components/Alert2"
+import Header from "../Components/Header"
 import { CardComponent } from "../Components/CardComponent"
 import { Heading } from "../Components/Heading"
 import WhoweAre from "../Components/WhoweAre"
@@ -23,8 +23,7 @@ const Div = styled.div`
 text-align:center;
 overflow-x:hidden;
 `
-
-export const LandingPage = () => {
+const LandingPage = () => {
     return (
         <Div>
             {/* <Alert1 />
@@ -48,3 +47,4 @@ export const LandingPage = () => {
         </Div>
     )
 }
+export default LandingPage

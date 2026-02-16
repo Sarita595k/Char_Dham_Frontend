@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bgImage from "../assets/Background-color/bg2.jpg"
+import bgImage from "../assets-webp/Background-color/bg2.webp"
 import Included from "./Included"
 import Excluded from "./Excluded"
 

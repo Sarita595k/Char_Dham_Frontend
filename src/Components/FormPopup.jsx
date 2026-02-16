@@ -2,8 +2,8 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import logo from '../assets/Logo/YugenIndiaLogo.png'
-import bgImage from "../assets/Background-color/bg2.jpg"
+import logo from '../assets-webp/Logo/YugenIndiaLogo.webp'
+import bgImage from "../assets-webp/Background-color/bg2.webp"
 
 const ModelWrapper = styled(Modal)`
 .modal-dialog{

@@ -1,6 +1,6 @@
-import headerImg from "../assets/Char Dham Yatra Family Package (1).png"
+import headerImg from "../assets-webp/Char Dham Yatra Family Package (1).webp"
 // import { Image } from "react-bootstrap"
-import mobileImage from "../assets/Header/Header_Mobile.jpg"
+import mobileImage from "../assets-webp/Header/Header_Mobile.webp"
 import styled from "styled-components"
 
 const HeaderWrapper = styled.div`

@@ -14,7 +14,6 @@ import { Alert2 } from './Components/Alert2';
 import Footer from './Components/Footer';
 import AllRightsReserved from './Components/AllRightsReserved';
 import ScrollToTop from './Components/ScrollToTop';
-import Counter from './Components/Counter';
 import ThankYou from './Components/ThankYou';
 
 
@@ -34,7 +33,6 @@ const App = () => {
         <Route path="/thankYou" element={<ThankYou />} />
       </Routes>
       <Footer />
-      {/* <Counter /> */}
       <AllRightsReserved />
     </>
   )

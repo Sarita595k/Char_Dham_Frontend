@@ -1,10 +1,9 @@
 import styled from "styled-components"
-import bgImage2 from "../assets/Background-color/bg1.png"
 import { GetInTouch } from "./GetInTouch"
 import { Link } from "react-router-dom"
-import logo from "../assets/Logo/YugenIndiaLogo.png"
-import logo2 from "../assets/Logo/skyLinkLogo.png"
-import Contact from "./Contact"
+import bgImage2 from "../assets-webp/Background-color/bg1.webp"
+import logo from "../assets-webp/Logo/YugenIndiaLogo.webp"
+import logo2 from "../assets-webp/Logo/skyLinkLogo.webp"
 
 const Div = styled.div`
 margin-top:clamp(3rem, 2vw, 5rem);

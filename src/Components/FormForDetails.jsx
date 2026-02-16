@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
 import { SubHeading } from './SubHeading';
-import { useEffect } from 'react';
 
 const Div = styled.div`
 width:clamp(80%, 45vw,90%);
